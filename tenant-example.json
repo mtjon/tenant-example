@@ -1,11 +1,11 @@
 {
-  "image": "dataserviceshub-docker-dshdemo1.jfrog.io/tenant-example:1.0.1-SNAPSHOT",
+  "image": "dataserviceshub-docker-training.jfrog.io/tenant-example:1.0.1-SNAPSHOT",
   "instances": 1,
-  "cpus": 0.5,
-  "mem": 1024,
+  "cpus": 0.1,
+  "mem": 128,
   "env": {
-    "INPUT_STREAM": "stream.dshdemoshared",
-    "OUTPUT_STREAM": "stream.dshdemoshared",
+    "INPUT_STREAM": "stream.training",
+    "OUTPUT_STREAM": "stream.training",
     "JAEGER_SERVICE_NAME": "tenant-example",
     "JAEGER_SAMPLER_TYPE": "const",
     "JAEGER_SAMPLER_PARAM": "1",
@@ -13,7 +13,7 @@
     "JAEGER_REPORTER_LOG_SPANS": "false",
     "JAEGER_REPORTER_MAX_QUEUE_SIZE": "10000"
   },
-  "user": "1024:1024",
+  "user": "uid:gid",
   "singleInstance": false,
   "needsToken": true
 }
