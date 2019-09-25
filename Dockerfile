@@ -3,8 +3,6 @@ MAINTAINER Bruno De Bus <Bruno.DeBus@klarrio.com>
 
 ARG IMAGE_VERSION
 
-# for training purposed configure uid to be 1024 for dshdemo1 or 1025 for
-# dshdemo2
 ENV id 1024
 ADD get_signed_certificate.sh /get_signed_certificate.sh
 ADD docker-entrypoint.sh /docker-entrypoint.sh
